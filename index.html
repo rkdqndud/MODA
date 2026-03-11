@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>MODA</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.svg?v=1" type="image/x-icon">
+    <!-- webfont -->
+    <!-- font-family: "Pretendard Variable" ; -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 📍header S -->
+        <header id="header" class="bg1">
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="logo" class="logo_img">
+                    </a>
+                </h1>
+                <ul class="nav">
+                    <li>
+                        <a href="#">MODA</a>
+                        <div class="mega_menu">
+                            <div class="mega_inner">
+                                <div class="mega_info">
+                                    <h4>Identity</h4>
+                                    <p>MODA는 부산의 로컬리티를<br>새로운 감각으로 편집하고 기록합니다.</p>
+                                </div>
+                                <div class="mega_links">
+                                    <a href="#" class="sub_link">브랜드 소개</a>
+                                    <a href="#" class="sub_link">브랜드 BI</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">art&culture</a>
+                        <div class="mega_menu">
+                            <div class="mega_inner">
+                                <div class="mega_info">
+                                    <h4>Curation</h4>
+                                    <p>현재 진행 중인 전시부터<br>부산 청년 작가들의 창의적인 시선을 담습니다.</p>
+                                </div>
+                                <div class="mega_links">
+                                    <a href="#" class="sub_link">이달의 추천</a>
+                                    <a href="#" class="sub_link">현재 진행 전시</a>
+                                    <a href="#" class="sub_link">부산 청년 작가 소개</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">space</a>
+                        <div class="mega_menu">
+                            <div class="mega_inner">
+                                <div class="mega_info">
+                                    <h4>Space</h4>
+                                    <p>다양한 창작 활동이 가능한 공간 가이드와<br>대관 서비스를 확인하세요.</p>
+                                </div>
+                                <div class="mega_links">
+                                    <a href="#" class="sub_link">공간 안내</a>
+                                    <a href="#" class="sub_link">이용안내 (FAQ)</a>
+                                    <a href="#" class="sub_link">대관 안내 및 신청</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">community</a>
+                        <div class="mega_menu">
+                            <div class="mega_inner">
+                                <div class="mega_info">
+                                    <h4>Archive</h4>
+                                    <p>MODA의 오리지널 굿즈와<br>기록된 일상의 조각들을 확인해 보세요.</p>
+                                </div>
+                                <div class="mega_links">
+                                    <a href="#" class="sub_link">굿즈 스토어</a>
+                                    <!-- <a href="#" class="sub_link">유저 아카이브</a> -->
+                                    <a href="#" class="sub_link">공지 및 이벤트</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="util">
+                    <li>
+                        <a href="#">
+                            <img src="./images/util1.png" alt="util1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">KO</a>
+                    </li>
+                    <li class="lang_sep">|</li>
+                    <li>
+                        <a href="#">EN</a>
+                    </li>
+                    <!-- <li class="lang_sep">|</li> -->
+                    <li class="login">
+                        <a href="#">
+                            <!-- <img src="./images/util2.png" alt="util2"> -->
+                            Login
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <img src="./images/util2.png" alt="util2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/util3.png" alt="util3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="lang">
+                                <div class="select_btn">
+                                    <span>
+                                        <img src="./images/util4.png" alt="util4">
+                                    </span>
+                                    <p>KO</p>
+                                    <span class="arrow">
+                                        <img src="./images/util5.png" alt="방향키">
+                                    </span>
+                                </div>
+                                <div class="option">
+                                    <p>
+                                        <a href="#" class="lang_opt" target="_self" title="EN">EN</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" class="lang_opt" target="_self" title="KO"
+                                            style="display: none;">KO</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+
+            </div>
+        </header>
+        <!-- 📍header E -->
+
+        <!-- 📍banner S -->
+        <section id="banner">
+            <div class="wave-bg">
+                <video id="video" autoplay muted loop preload="auto" width="100%">
+                    <source src="./media/banner_video.mp4" type="video/mp4">
+
+                <!-- <div id="video-wrapper" style="position:relative; width:100%; overflow:hidden; background:#000;">
+                    <video id="video1" autoplay muted playsinline preload="auto" width="100%"
+                        style="display:block; transition: opacity 0.8s;"></video>
+                    <video id="video2" muted playsinline preload="auto" width="100%"
+                        style="position:absolute; top:0; left:0; opacity:0; transition: opacity 0.8s;"></video>
+                </div> -->
+
+            </div>
+            <div class="banner-overlay"></div> <!-- 그라데이션 오버레이 -->
+
+            <div class="banner_content">
+                <!-- <h1 class="main-title" id="dynamic-title">
+                    STAY BUSAN <span class="highlight">PLAY</span> MODA
+                </h1> -->
+                <!-- <h1>MODA</h1> -->
+                <h2>부산을 경험하는 문화의 파도</h2>
+                <p>문화 · 관광 · 커뮤니티가 연결되는 복합문화공간 플랫폼</p>
+            </div>
+
+            <div class="wave_mask">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 180" preserveAspectRatio="none">
+                    <path fill="#ffffff"
+                        d="M0,100 C300,180 600,180 960,140 C1320,100 1620,0 1920,80 L1920,180 L0,180 Z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- 📍banner E -->
+
+        <!-- 📍section1 S -->
+        <section id="section1">
+            <div id="simbol">
+                <div class="shape shape_blue">
+                    <img src="./images/simbol1.png" alt="simbol blue">
+                </div>
+                <div class="shape shape_orange">
+                    <img src="./images/simbol2.png" alt="simbol yellow">
+                </div>
+                <div class="shape shape_green">
+                    <img src="./images/simbol3.png" alt="simbol green">
+                </div>
+                <div class="shape shape_pink">
+                    <img src="./images/simbol4.png" alt="simbol pink">
+                </div>
+
+                <div class="intro ani_item">
+                    <div class="intro_tag">New Perspective</div>
+                    <h2 class="intro_title">
+                        익숙한 도시를 새롭게,<br>
+                        편집된 부산을 만나다
+                    </h2>
+                    <p class="intro_desc">
+                        MODA는 부산의 로컬리티를 새로운 감각으로 편집하고 기록하는 공간입니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 📍 아랫부분 추가: MODA Project & Our Space -->
+            <div id="under_btn">
+                <!-- MODA Project 카드 -->
+                <!-- <div class="project_card">
+                    <div class="card_img_wrap">
+                        <img src="./images/content2 (4).jpg" alt="project">
+                    </div>
+                    <div class="card_info">
+                        <span class="card_tag">MODA Project</span>
+                        <h3>Collect & Connect</h3>
+                        <p>부산의 로컬 크리에이터들과 함께 만드는<br>지속 가능한 문화 생태계 프로젝트를 소개합니다.</p>
+                    </div>
+                </div> -->
+
+                <!-- Our Space 카드 -->
+                <!-- <div class="project_card space_card">
+                    <div class="card_img_wrap">
+                        <img src="./images/content2 (2).jpg" alt="space">
+                    </div>
+                    <div class="card_info">
+                        <span class="card_tag">Our Space</span>
+                        <h3>공간 그 이상의 가치</h3>
+                        <p>단순한 휴식을 넘어 영감을 채우는 MODA만의<br>큐레이션 공간에서 특별한 시간을 경험하세요.</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <!-- 📍section1 E -->
+
+        <!-- 📍section2 S -->
+        <section id="section2">
+            <div id="curation" class="active">
+
+                <div class="curation_wrap">
+                    <!-- 상단 타이틀 및 네비 -->
+                    <div class="curation_header">
+                        <div class="title_group">
+                            <span>✨MODA CURATION</span>
+                            <h2>부산의 취향을 세심하게 담은 리스트</h2>
+                        </div>
+                        <!-- <div class="curation_nav">
+                            <a href="#" class="btn_more pink">전체보기</a>
+                        </div> -->
+                    </div>
+
+                    <!-- 메인 그리드 (좌측 고정 포스터 + 우측 스크롤 리스트) -->
+                    <div class="curation_grid_container">
+                        <!-- 좌측: 메인 포스터 -->
+                        <!-- 좌측: 시차 인터랙티브 포스터 -->
+                        <div class="curation_left_poster" id="parallaxPoster">
+                            <img src="./images/poster1.gif" alt="Main Poster" class="poster_img" id="posterImg">
+                            <div class="poster_overlay"></div>
+
+                            <div class="poster_default_text">
+                                <h3>2026 New Wave</h3>
+                                <p>모다부산이 제안하는 이번 달의 전시</p>
+                            </div>
+
+                            <div class="poster_hover_info">
+                                <h4>Special Curating</h4>
+                                <p>평범한 일상을 예술로 바꾸는<br>신진 작가들의 파격적인 조각 전시회</p>
+                                <a href="#" class="btn_more">자세히보기</a>
+                            </div>
+                        </div>
+
+                        <!-- 우측: 그리드 리스트 -->
+                        <div class="curation_right_scroll">
+                            <div class="sub_grid_list">
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box">
+                                        <img src="./images/poster2.png" alt="item1">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>L!FE NO LOGY LAB: 의식주 연구소</h4>
+                                        <p>2024.05.01 - 06.30 | 신세계 센텀시티</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box" style="background: #82d24f;">
+                                        <!-- <div
+                                            style="height:100%; display:flex; align-items:center; justify-content:center; font-size:40px;">
+                                            📚</div> -->
+                                        <img src="./images/poster3.jpg" alt="item2">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>세계팝업아트展</h4>
+                                        <p>매주 목요일 | 모다 커뮤니티룸</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box" style="background: #f9ae3d;">
+                                        <!-- <div
+                                            style="height:100%; display:flex; align-items:center; justify-content:center; font-size:40px;">
+                                            💡</div> -->
+                                        <img src="./images/poster4.png" alt="item3">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>도심 속 공예 틈에서 피어나다</h4>
+                                        <p>신규 워크숍 모집 중 | MODA Space</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box">
+                                        <img src="./images/poster5.webp" alt="item5">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>두구리 &lt;구리구리구리&gt; 팝업</h4>
+                                        <p>2024.02.01 - 02.28 | 부산 본점</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box">
+                                        <img src="./images/poster6.png" alt="item6">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>Art in Busan : 현대 미술 전시</h4>
+                                        <p>상시 전시 | 2F 메인 홀</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box">
+                                        <img src="./images/poster7.jpg" alt="item7">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>Light Up : 야경 출사 투어</h4>
+                                        <p>매주 금요일 | 부산 광안리 일대</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box" style="background: #8dc7e9;">
+                                        <!-- <div
+                                            style="height:100%; display:flex; align-items:center; justify-content:center; font-size:40px;">
+                                            📸</div> -->
+                                        <img src="./images/poster7.jpg" alt="item8">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>로컬 사진 기록가 양성 과정</h4>
+                                        <p>2024.07.01 개강 | 수강생 모집 중</p>
+                                    </div>
+                                </div>
+
+                                <div class="sub_item ani_item">
+                                    <div class="img_box">
+                                        <img src="./images/poster7.jpg" alt="item9">
+                                    </div>
+                                    <div class="info_box">
+                                        <h4>다시 쓰는 소재이야기</h4>
+                                        <p>2024.06.10 - 06.25 | 서면 롯데</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 📍section2 E -->
+
+        <!-- 📍section3 S -->
+        <section id="section3">
+            <section class="magazine">
+                <!-- 🌊 상단 물결무늬 SVG -->
+                <div class="wave_divider">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill" fill="#fff"></path>
+                    </svg>
+                </div>
+
+                <div class="mag_container">
+                    <!-- 📸 타이틀 영역 -->
+                    <header class="mag_header ani_item">
+                        <div class="mag_title">
+                            <div class="title_group">
+                                <span>🌊 Weekly Spotlight</span>
+                                <h2>타이틀 문구를 작성합니다.</h2>
+                            </div>
+                            <p>꿈을 빚는 청년 창작자들의 진솔한 목소리를 담았습니다. <br>그들이 부산이라는 도시에서 발견한 영감과 창작의 고뇌, 그리고 성장의 기록.</p>
+                        </div>
+                        <!-- <div class="mag_btn">
+                            <a href="#" class="btn_more green">전체보기</a>
+                        </div> -->
+                    </header>
+
+                    <!-- 📸 매거진 그리드 영역 -->
+                    <div class="mag_grid">
+
+                        <!-- 인터뷰 01 -->
+                        <div class="mag_col col_left">
+                            <div class="mag_card ani_item">
+                                <div class="mag_img_box">
+                                    <img src="./images/interview1.jpg" alt="인터뷰이 01">
+                                    <div class="mag_overlay">
+                                        <div class="mag_info_content">
+                                            <span class="mag_category">Interview 01</span>
+                                            <h3 class="mag_subject">빛을 쫓는 기록가,<br>사진작가 한준서</h3>
+                                            <a href="#" class="btn_link">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mag_caption ani_item">
+                                "카메라 렌즈 너머로 보이는 부산은 매순간 다른 옷을 입습니다. 저는 그 찰나의 진심을 담아낼 뿐이죠."
+                            </div>
+                        </div>
+
+                        <!-- 인터뷰 02 -->
+                        <div class="mag_col col_mid">
+                            <div class="mag_caption ani_item">
+                                "공간은 사람의 기억을 보관하는 그릇과 같습니다. 제 작업은 그 그릇을 아름답게 닦아내는 일입니다."
+                            </div>
+                            <div class="mag_card ani_item">
+                                <div class="mag_img_box">
+                                    <img src="./images/interview2.jpg" alt="인터뷰이 02">
+                                    <div class="mag_overlay">
+                                        <div class="mag_info_content">
+                                            <span class="mag_category">Interview 02</span>
+                                            <h3 class="mag_subject">공간의 호흡,<br>설치미술가 이은주</h3>
+                                            <a href="#" class="btn_link">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 인터뷰 03 -->
+                        <div class="mag_col col_right">
+                            <div class="mag_card ani_item">
+                                <div class="mag_img_box">
+                                    <img src="./images/interview3.jpg" alt="인터뷰이 03">
+                                    <div class="mag_overlay">
+                                        <div class="mag_info_content">
+                                            <span class="mag_category">Interview 03</span>
+                                            <h3 class="mag_subject">도시의 리듬,<br>사운드 아티스트 케이</h3>
+                                            <a href="#" class="btn_link">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mag_caption ani_item">
+                                "골목의 소음조차 저에게는 선율이 됩니다. 소리로 기록하는 부산의 일상은 생각보다 리드미컬하거든요."
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="mid_banner">
+                    <img src="images/mid_banner.jpg" alt="mid_banner">
+                </div> -->
+            </section>
+        </section>
+        <!-- 📍section3 E -->
+
+        <!-- 📍section4 S -->
+        <section id="section4">
+            <div class="wave-wrapper">
+                <div class="wave-divider">
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            fill="#0f141e">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="container-inner">
+                    <div class="title_group">
+                        <span>📍 Explore Space</span>
+                        <h2>타이틀 문구를 작성합니다.</h2>
+                    </div>
+
+                    <!-- 📍 [수정] 클래스 추가: 애니메이션 효과를 위해 헤더 감싸기 -->
+                    <div class="section-header mb-10">
+                        <span>📍 Explore Space</span>
+                        <h2>타이틀 문구를 작성합니다.</h2>
+                    </div>
+
+                    <div class="content-grid">
+                        <!-- 지도 영역 -->
+                        <div class="map-section">
+                            <div class="map-box">
+                                <img src="./images/map.png" alt="Busan Map"
+                                    class="w-full h-full object-cover grayscale opacity-30">
+                                <div class="marker" data-id="0" style="top: 35%; left: 70%;"></div>
+                                <div class="marker" data-id="1" style="top: 75%; left: 55%;"></div>
+                                <div class="marker" data-id="2" style="top: 65%; left: 15%;"></div>
+                                <div class="marker" data-id="3" style="top: 80%; left: 45%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- 정보 섹션 -->
+                        <div class="info-section">
+                            <div class="filter-container">
+                                <button class="filter-btn active" data-filter="all">전체</button>
+                                <button class="filter-btn" data-filter="culture">문화공간</button>
+                                <button class="filter-btn" data-filter="tour">관광지</button>
+                            </div>
+
+                            <div class="scroll-list">
+                                <!-- 카드 1 -->
+                                <div class="card is-active" data-category="culture" data-marker="0">
+                                    <div class="card-header">
+                                        <div class="header-main">
+                                            <div class="card-img">
+                                                <img src="https://images.unsplash.com/photo-1590664083111-923f59639598?q=80&w=400"
+                                                    alt="F1963">
+                                            </div>
+                                            <div>
+                                                <h3 class="font-bold text-base text-[#1a1e2c]">F1963</h3>
+                                                <div class="card-summary">수영구 • 와이어 공장의 변신</div>
+                                            </div>
+                                        </div>
+                                        <div class="toggle-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card-detail">
+                                        <div class="info-grid">
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
+                                                <span class="info-text">수영구 구락로123번길 20</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <span class="info-text">09:00 - 21:00</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc-text">옛 공장을 재생하여 만든 복합문화공간으로 전시장과 카페가 조화로운 곳입니다.</p>
+                                        <div class="tag-container">
+                                            <span class="tag">#재생건축</span><span class="tag">#카페</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 카드 2 -->
+                                <div class="card" data-category="tour" data-marker="1">
+                                    <div class="card-header">
+                                        <div class="header-main">
+                                            <div class="card-img">
+                                                <img src="https://images.unsplash.com/photo-1621251918451-f7614d9b6c08?q=80&w=400"
+                                                    alt="흰여울">
+                                            </div>
+                                            <div>
+                                                <h3 class="font-bold text-base text-[#1a1e2c]">흰여울문화마을</h3>
+                                                <div class="card-summary">영도구 • 절경 위 바다 마을</div>
+                                            </div>
+                                        </div>
+                                        <div class="toggle-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card-detail">
+                                        <div class="info-grid">
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
+                                                <span class="info-text">영도구 영선동4가 605-3</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <span class="info-text">상시 개방</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc-text">해안 절벽을 따라 걷는 산책로와 아기자기한 카페가 가득한 영도의 랜드마크입니다.</p>
+                                        <div class="tag-container">
+                                            <span class="tag">#오션뷰</span><span class="tag">#산책</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 카드 3 -->
+                                <div class="card" data-category="culture" data-marker="2">
+                                    <div class="card-header">
+                                        <div class="header-main">
+                                            <div class="card-img">
+                                                <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?q=80&w=400"
+                                                    alt="미술관">
+                                            </div>
+                                            <div>
+                                                <h3 class="font-bold text-base text-[#1a1e2c]">부산현대미술관</h3>
+                                                <div class="card-summary">사하구 • 자연 속 예술 공간</div>
+                                            </div>
+                                        </div>
+                                        <div class="toggle-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card-detail">
+                                        <div class="info-grid">
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
+                                                <span class="info-text">사하구 낙동남로 1191</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <span class="info-text">10:00 - 18:00 (월 휴관)</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc-text">을숙도 생태공원에 위치한 미술관으로 자연과 미디어 아트의 조화를 보여줍니다.</p>
+                                        <div class="tag-container">
+                                            <span class="tag">#미디어아트</span><span class="tag">#전시</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 📍section4 E -->
+
+        <!-- 📍section5 S -->
+        <!-- Horizontal Scroll Sticky Section -->
+        <div class="sticky-wrapper" id="sticky-wrapper">
+            <div class="sticky-content">
+                <section class="goods-section" id="goods-section">
+
+                    <!-- 물결 SVG 컨테이너 -->
+                    <!-- <div class="relative w-full">
+                        <svg viewBox="0 0 1440 280" xmlns="http://www.w3.org/2000/svg" class="w-full block"
+                            preserveAspectRatio="none">
+                            <path fill="#fff" d="M0,0 L1440,0 L1440,230 C900,120 400,-20 0,100 Z">
+                            </path>
+                        </svg>
+                    </div> -->
+
+                    <!-- Section Header -->
+                    <div class="header-container">
+                        <div class="reveal">
+                            <div class="section-tag-line">
+                                <!-- <span class="tag-bar"></span> -->
+                                <div class="title_group">
+                                    <span>📍 Explore Space</span>
+                                    <h2>타이틀 문구를 작성합니다.</h2>
+                                </div>
+                            </div>
+                            <!-- <h2 class="main-title font-montserrat">
+                                SELECTED<br><span class="title-stroke">OBJECTS.</span>
+                            </h2> -->
+                        </div>
+                        <div class="reveal delay-100">
+                            <p class="desc-text">
+                                익숙한 도시를 새롭게 바라보는 모다의 시선.<br>
+                                일상의 빈칸을 채우는 감각적인 오브제 컬렉션입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Slider Area -->
+                    <div class="relative w-full overflow-hidden" id="scroll-wrapper">
+                        <div id="slide-inner">
+
+                            <!-- Item 01 -->
+                            <div class="merch-card reveal">
+                                <div class="img-wrapper">
+                                    <img src="images/mockup (1).jpg"
+                                        alt="티셔츠">
+                                    <div class="card-overlay">
+                                        <span class="detail-btn">
+                                            VIEW DETAIL
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-info">
+                                    <div>
+                                        <p class="info-cat">Curation 01</p>
+                                        <h3 class="info-title">MODA Signature Tee</h3>
+                                        <p class="info-price">₩ 38,000</p>
+                                    </div>
+                                    <div class="plus-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 02 -->
+                            <div class="merch-card reveal delay-100">
+                                <div class="img-wrapper">
+                                    <img src="images/mockup (1).jpg"
+                                        alt="에코백">
+                                    <div class="card-overlay">
+                                        <span class="detail-btn">
+                                            VIEW DETAIL
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-info">
+                                    <div>
+                                        <p class="info-cat">Curation 02</p>
+                                        <h3 class="info-title">Canvas Daily Bag</h3>
+                                        <p class="info-price">₩ 24,000</p>
+                                    </div>
+                                    <div class="plus-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 03 -->
+                            <div class="merch-card reveal delay-200">
+                                <div class="img-wrapper">
+                                    <img src="images/mockup (2).jpg"
+                                        alt="노트">
+                                    <div class="card-overlay">
+                                        <span class="detail-btn">
+                                            VIEW DETAIL
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-info">
+                                    <div>
+                                        <p class="info-cat">Curation 03</p>
+                                        <h3 class="info-title">Hardcover Journal</h3>
+                                        <p class="info-price">₩ 18,000</p>
+                                    </div>
+                                    <div class="plus-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 04 -->
+                            <div class="merch-card reveal delay-200">
+                                <div class="img-wrapper">
+                                    <img src="images/mockup (2).jpg"
+                                        alt="노트">
+                                    <div class="card-overlay">
+                                        <span class="detail-btn">
+                                            VIEW DETAIL
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-info">
+                                    <div>
+                                        <p class="info-cat">Curation 03</p>
+                                        <h3 class="info-title">Hardcover Journal</h3>
+                                        <p class="info-price">₩ 18,000</p>
+                                    </div>
+                                    <div class="plus-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Shop All Card -->
+                            <div class="shop-all-card reveal delay-300">
+                                <a href="#" class="flex flex-col items-center group">
+                                    <div class="shop-all-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                        <div class="pink-dot"></div>
+                                    </div>
+                                    <h4 class="shop-all-title font-montserrat">Shop All.</h4>
+                                    <p class="shop-all-sub">Explore Full Edition</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- 📍section5 E -->
+
+        <!-- 📍footer S -->
+        <footer class="footer-wrap">
+            <svg class="footer-wave-svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#0F172A" d="M0,40 C320,100 480,0 720,50 C960,100 1120,0 1440,60 L1440,100 L0,100 Z"></path>
+            </svg>
+
+            <div class="footer_container">
+                <div class="footer-bottom-grid">
+                    <div>
+                        <h2 class="footer_logo">
+                            <a href="#">
+                                <img src="./images/logo1.png" alt="logo">
+                            </a>
+                        </h2>
+                        <p class="logo_under">
+                            <!-- STAY BUSAN, PLAY MODA.<br> -->
+                            부산의 로컬 디자인과 크리에이티브를 연결합니다.<br>
+                            우리는 도시를 즐기는 새로운 방법을 제안합니다.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="footer-label uppercase">Follow</h4>
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">Youtube</a>
+                        <a href="#" class="footer-link">Behance</a>
+                    </div>
+                    <div>
+                        <h4 class="footer-label uppercase">Legal</h4>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <h4 class="footer-label uppercase">Contact</h4>
+                        <p class="footer-link">hello@moda.kr</p>
+                        <p class="text-gray-500 text-sm">Busan, KR</p>
+                    </div>
+                </div>
+
+                <div class="newsletter-footer-row">
+                    <div>
+                        <h3 class="join">JOIN OUR COMMUNITY</h3>
+                        <p class="footer_sub">모다의 로컬 소식과 혜택을 구독하세요.</p>
+                    </div>
+                    <div class="news-input-container">
+                        <input type="text" class="news-input" placeholder="Email Address">
+                        <!-- <button class="news-submit-btn en"></button> -->
+                    </div>
+                </div>
+
+                <div class="footer_under">
+                    <p>© 2026 MODA STUDIO. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 📍footer E -->
+
+
+    </div><!-- wrap E -->
+
+    <!-- jQuery 오픈소스 -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/gsap.min.js"></script>
+    <!-- 제어코드 연결 -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
